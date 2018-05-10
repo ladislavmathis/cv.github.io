@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Moje CV</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet">
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <style>
+   body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+   body, html {
+      height: 100%;
+      line-height: 1.8;
+   }
+
+   /* obrazky pre parallax */
+   .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   
+   .bgimg-1 {
+      background-image: url('https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/31408196_10204580297743934_8518425869012697088_n.jpg?_nc_cat=0&oh=8b3d6b24bbfcea84204664f8f677d616&oe=5B4EADE4&dl=1, https://www.facebook.com/');
+      min-height: 100%;
+   }
+
+   
+   .bgimg-2 {
+      background-image: url(obrazky/scroll1.jpg);
+      min-height: 400px;
+   }
+
+   
+   .bgimg-3 {
+      background-image: url(obrazky/scroll2.jpg);
+      min-height: 400px;
+   }
+
+   .wide {
+    letter-spacing: 1px;
+    border-radius: 20px;
+    opacity: 0.8;
+   }
+   .hover-opacity {cursor: pointer;}
+
+   /* parallax pre mobily a mensie obrzovky */
+   @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+      }
+   }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <div class="top">
+    <div class="bar" id="myNavbar">
+      <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);"
+      onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a class="bar-item button" href="#home">Domov</a> <a class="bar-item button hide-small" href=
+      "#about"><i class="fa fa-user"></i> O mne</a> <a class="bar-item button hide-small" href=
+      "#portfolio"><i class="fa fa-th"></i> Portfolio</a> <a class="bar-item button hide-small" href=
+      "#contact"><i class="fa fa-envelope"></i> Kontakt</a>
+    </div>
+
+
+    <!-- Navbar mala obrazovka--> 
+
+    <div class="bar-block white hide hide-large hide-medium" id="navDemo">
+      <a class="bar-item button" href="#about" onclick="toggleFunction()">O mne</a> <a class=
+      "bar-item button" href="#portfolio" onclick="toggleFunction()">Portfolio</a> <a class=
+      "bar-item button" href="#contact" onclick="toggleFunction()">Kontakt</a>
+    </div>
+  </div>
+
+  <!-- prvy parallax -->
+
+
+  <div class="bgimg-1 display-container opacity-min" id="home">
+  <!-- snow animacia -->
+    <div class="hero display-container">
+      <div class="snow">
+        <svg preserveaspectratio="xMidYMax slice" viewbox="0 0 1024 1536" xmlns="obrazky/fotka2.jpg">
+        <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
+          <g id="snow-bottom-layer">
+            <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="398" cy="1055.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="719" cy="1284.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="760" cy="1155.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="635" cy="1459.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="478" cy="1335.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="322" cy="1414.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="247" cy="1234.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="154" cy="1425.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="731" cy="773.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="599" cy="874.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="339" cy="819.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="239" cy="1004.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="113" cy="863.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="102" cy="1223.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="395" cy="1155.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="826" cy="943.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="626" cy="1054.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="887" cy="1366.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="6" cy="241.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="138" cy="342.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="398" cy="287.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="719" cy="516.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="760" cy="387.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="635" cy="691.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="478" cy="567.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="322" cy="646.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="247" cy="466.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="154" cy="657.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="731" cy="5.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="599" cy="106.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="339" cy="51.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="239" cy="236.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="113" cy="95.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="102" cy="455.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="395" cy="387.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="826" cy="175.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="626" cy="286.5" rx="6" ry="5.5"></ellipse>
+            <ellipse cx="887" cy="598.5" rx="6" ry="5.5"></ellipse>
+          </g>
+        </g>
+
+        <g fill="#FFF" fill-opacity=".3" transform="translate(65 63)">
+          <g id="snow-top-layer">
+            <circle cx="8" cy="776" r="8"></circle>
+            <circle cx="189" cy="925" r="8"></circle>
+            <circle cx="548" cy="844" r="8"></circle>
+            <circle cx="685" cy="1115" r="8"></circle>
+            <circle cx="858" cy="909" r="8"></circle>
+            <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)"></circle>
+            <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)"></circle>
+            <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)"></circle>
+            <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)"></circle>
+            <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)"></circle>
+            <circle cx="8" cy="8" r="8"></circle>
+            <circle cx="189" cy="157" r="8"></circle>
+            <circle cx="548" cy="76" r="8"></circle>
+            <circle cx="685" cy="347" r="8"></circle>
+            <circle cx="858" cy="141" r="8"></circle>
+            <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)"></circle>
+            <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)"></circle>
+            <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)"></circle>
+            <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)"></circle>
+            <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)"></circle>
+          </g>
+        </g></svg>
+      </div>
+    </div>
+
+
+    <div class="display-middle" style="white-space:nowrap;">
+      <span class="left padding-large white xxlarge wide animate-opacity">Laco Mathis <span class=
+      "hide-small">Front-end developer</span></span>
+    </div>
+  </div>
+  <!-- sekcia o mne -->
+
+
+  <div class="row center dark-grey padding-16">
+  </div>
+
+
+  <div class="content container padding-64" id="about">
+    <h3 class="center">O mne</h3>
+
+
+    <p class="center"><em>Ahojte</em>
+    </p>
+
+
+    <p>Bacon ipsum dolor amet picanha pork flank hamburger capicola pastrami chuck porchetta shank
+    shoulder short ribs turkey. Doner pork chop filet mignon ball tip ham, andouille sausage fatback
+    pork belly hamburger short loin shoulder short ribs venison pancetta. Filet mignon spare ribs
+    porchetta kevin pork loin cupim, brisket boudin flank frankfurter bresaola. Spare ribs bacon beef
+    swine fatback, beef ribs ribeye ball tip sirloin tri-tip flank salami turducken chicken.
+    Porchetta beef pancetta andouille tongue hamburger.</p>
+
+
+    <div class="row">
+      <div class="col m6 padding-large">
+      <p>Buffalo ball tip beef jerky filet mignon bacon, picanha burgdoggen leberkas capicola. Cow
+      jowl ball tip turkey flank, buffalo sirloin frankfurter salami brisket filet mignon. Leberkas
+      sausage capicola jowl, spare ribs ham beef short ribs beef ribs venison. Hamburger spare ribs
+      capicola tenderloin biltong porchetta picanha salami doner. Turkey tri-tip porchetta meatball
+      spare ribs short ribs ball tip shankle. Jowl shoulder pig, pork sausage porchetta tongue fatback
+      pastrami kevin chicken pork loin filet mignon biltongtenderloin. Kevin pork belly chuck, strip
+      steak pork loin jerky venison swine capicola frankfurter beef sausage tongue.</p>
+
+
+      <div class="xlarge section">
+        <a href="https://www.facebook.com/lacko.mathis" target="_blank"><i class=
+        "fa fa-facebook-official hover-opacity"></i></a> <a href=
+        "https://www.instagram.com/ladislav.mathis/" target="_blank"><i class=
+        "fa fa-instagram hover-opacity"></i></a> <a href=
+        "https://www.linkedin.com/in/ladislav-mathis-920171a7/" target="_blank"><i class=
+        "fa fa-linkedin hover-opacity"></i></a>
+      </div>
+      <img class="logo" src="obrazky/logo.png">
+      </div>
+
+
+      <div class="col m6 center padding-large"><img alt="Photo of Me" class=
+      "round image opacity hover-opacity-off" height="333" src="obrazky/profil2.png" width="500">
+      </div>
+    </div>
+
+
+    <p class="large center padding-16">V čom som dobrý ?</p>
+
+
+    <p class="wide"><i><img src="obrazky/html.png"></i>HTML</p>
+
+
+    <div class="light-grey">
+      <div class="container padding-small dark-grey center" style="width:50%">
+        50%
+      </div>
+    </div>
+
+
+    <p class="wide"><i><img src="obrazky/css.png"></i>CSS</p>
+
+
+    <div class="light-grey">
+      <div class="container padding-small dark-grey center" style="width:50%">
+        50%
+      </div>
+    </div>
+
+
+    <p class="wide"><i><img src="obrazky/javascript.png"></i>Javascript</p>
+
+
+    <div class="light-grey">
+      <div class="container padding-small dark-grey center" style="width:30%">
+        30%
+      </div>
+    </div>
+
+
+    <p class="wide"><i><img src="obrazky/angular.png"></i>Angular</p>
+
+
+    <div class="light-grey">
+      <div class="container padding-small dark-grey center" style="width:20%">
+        20%
+      </div>
+    </div>
+
+
+    <p class="wide"><i><img src="obrazky/react.png"></i>React Native</p>
+
+
+    <div class="light-grey">
+      <div class="container padding-small dark-grey center" style="width:10%">
+        10%
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row center dark-grey padding-16">
+  </div>
+  <!-- druhy parallax -->
+
+
+  <div class="bgimg-2 display-container opacity-min">
+    <div class="display-middle">
+    </div>
+  </div>
+  <!-- sekcia moje projekty -->
+
+
+  <div class="content container padding-64" id="portfolio">
+    <h3 class="center">Moje projekty</h3>
+
+    <p class="center"><em>Toto su moje posledné projekty lorem work ipsum tipsum.<br>
+    Stačí kliknúť na obrázok</em>
+    </p>
+    <br>
+    <!-- Moje projekty. Kvoli nedostatku som tu vlozil aj webstranky ktore sa mi pacia -->
+
+    <div class="row-padding center">
+      <div class="col m3">
+        <a href="http://mathisbuilders.com/" target="_blank"><img alt="Mathis_Builders" class=
+        "hover-opacity" onclick="onClick(this)" src="obrazky/projekt1.PNG" style="width:100%"></a>
+      </div>
+
+
+      <div class="col m3">
+        <a href="#" target="_blank"><img alt="Moje_Cv" class="hover-opacity" onclick="onClick(this)"
+        src="obrazky/projekt2.PNG" style="width:100%"></a>
+      </div>
+
+
+      <div class="col m3">
+        <a href="https://www.mad.ac/" target="_blank"><img alt="animacia" class="hover-opacity"
+        onclick="onClick(this)" src="obrazky/projekt3.PNG" style="width:100%"></a>
+      </div>
+
+
+      <div class="col m3">
+        <a href="https://peekabeat.com/#!/capture" target="_blank"><img alt="animacia" class=
+        "hover-opacity" onclick="onClick(this)" src="obrazky/projekt4.PNG" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+  <!-- treti parallax -->
+
+
+  <div class="bgimg-3 display-container opacity-min sepia">
+    <div class="display-middle">
+    </div>
+  </div>
+  <!-- kontakt -->
+
+
+  <div class="content container padding-64" id="contact">
+    <h3 class="center">Kontakt</h3>
+
+
+    <div class="row padding-32 section ">
+      <div class="col m4 container">
+        <div class="round-large greyscale" id="googleMap" style="width:100%;height:400px;">
+        </div>
+      </div>
+
+
+      <div class="col m8 panel centrum">
+        <div class="large margin-bottom">
+          <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Bratislava<br>
+          <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> 0914 124 442<br>
+          <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email:
+          ladislav.mathis@yahoo.com<br>
+        </div>
+
+
+        <p>Zastavte sa na kávu<i class="fa fa-coffee"></i>, alebo napíšte:</p>
+          <button class="button black right section" type="submit" onclick="location.replace('mailto:ladislav.mathis@yahoo.com')">
+            <i class="fa fa-paper-plane"></i> Správa
+          </button>
+ 
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+
+  <footer class="center black padding-64 opacity hover-opacity-off">
+    <a class="button light-grey" href="#home"><i class="fa fa-arrow-up margin-right"></i>Späť na
+    začiatok</a>
+
+    <div class="xlarge section">
+      <a href="https://www.facebook.com/lacko.mathis" target="_blank"><i class=
+      "fa fa-facebook-official hover-opacity"></i></a> <a href=
+      "https://www.instagram.com/ladislav.mathis/" target="_blank"><i class=
+      "fa fa-instagram hover-opacity"></i></a> <a href=
+      "https://www.linkedin.com/in/ladislav-mathis-920171a7/" target="_blank"><i class=
+      "fa fa-linkedin hover-opacity"></i></a>
+    </div>
+  </footer>
+  <!-- Google Mapa -->
+  <script>
+   function myMap()
+   {
+    myCenter=new google.maps.LatLng(48.156905, 17.132372);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+   }
+
+
+   // zmeni styl navbaru pri scrolovani
+   window.onscroll = function() {myFunction()};
+   function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "bar" + " card" + " animate-top" + " white";
+      } else {
+          navbar.className = navbar.className.replace(" card animate-top white", "");
+      }
+   }
+
+   
+   function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("show") == -1) {
+          x.className += " show";
+      } else {
+          x.className = x.className.replace(" show", "");
+      }
+   }
+  </script> 
+  <script src=
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyClq035iEi38CyW2HaIfeo9nu0KvA89r7M&callback=myMap">
+  </script>
+</body>
+</html>
